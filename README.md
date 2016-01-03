@@ -1,2 +1,1 @@
-# rbudzko.github.io.examples
-Examples for rbudzko.github.io.
+Example of creating dynamic beans based on objects not bean definitions.
