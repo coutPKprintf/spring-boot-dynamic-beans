@@ -1,5 +1,6 @@
 package org.rbudzko.spring.beans;
 
+import org.rbudzko.spring.beans.inner.DefaultPlayerBuilder;
 import org.springframework.beans.BeansException;
 import org.springframework.beans.factory.config.ConfigurableListableBeanFactory;
 import org.springframework.beans.factory.support.BeanDefinitionBuilder;
@@ -41,7 +42,7 @@ public class Main {
                                      * Note that it is possible to use constructors as well as methods.
                                      * Rules of Spring applies normally.
                                      */
-                                    .rootBeanDefinition(DefaultPlayer.class, "forName")
+                                    .rootBeanDefinition(DefaultPlayerBuilder.class, "forName")
                                     /**
                                      * Note that environment has been wired by use of signature and @Bean, so we can access
                                      * other elements which reside in context. Processor os one of first beans created, so
