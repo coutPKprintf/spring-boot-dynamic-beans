@@ -57,7 +57,7 @@ public class Main {
             }
 
             @Override
-            public void postProcessBeanFactory(ConfigurableListableBeanFactory beanFactory) throws BeansException {
+            public void postProcessBeanFactory(final ConfigurableListableBeanFactory beanFactory) throws BeansException {
                 // Nothing.
             }
 
